@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body >
+    <div class="container">
+        <div class="head">
+            <span>Student  Management  CRUD</span>
+        </div>
+
+        <!--Created form structure-->
+
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="Name" id="name">
+                <input type="email" placeholder="Email" id="email">
+                <input type="number" placeholder="GPA" id="gpa">
+               
+                <input type="number" placeholder="Age" id="age">
+                <input type="text" placeholder="Degree" id="degree">
+            </form>
+
+            <!--butttons for add student and edit student-->
+            <div class="add-button">
+                <button type="button" id="addStudent" >Add Student</button>
+            </div>
+            <div class="edit-button">
+                <button type="button" id="editStudent">Edit Student</button>
+            </div>
+
+        </div>
+
+        <div class="search">
+            <input type="text" name="" placeholder="Search By Name, email or degree" id="search">
+        </div>
+        <div class="info">
+
+            <!--table -->
+            <table>
+                <thead>
+                   
+                    <td>ID</td>
+                    <td>Student Name</td>
+                    <td>Email</td>
+                    <td>Age</td>
+                    <td>GPA</td>
+                    <td>Degree</td>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+ 
+    <script src="style.js"></script>
+</body>
+</html>
